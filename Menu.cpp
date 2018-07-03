@@ -203,3 +203,12 @@ Menu::fourButtons(char* b1, char*b2, char* b3, char* b4, int sel) {
 		tft.println(b4);
 	}
 }
+//generat a big box and show a text
+Menu::textBox(char* text) {
+	tft.fillRect(0, 0, _width, _height, _backgroundColor);
+	tft.fillRect(_border, _border, _buttonwidth, _textboxheight, _buttonColor);
+	tft.setCursor(_border + textdistotop, _border + textdistotop);
+	tft.setTextColor(_textColor);
+	tft.setTextSize(textSize);
+	tft.println(text);
+}

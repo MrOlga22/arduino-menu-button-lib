@@ -32,7 +32,8 @@ class Menu {
 	  int _width = displaywidth;
 	  int _height = displayheight;
 	  int _buttonheight = _height / 4 - 10;
-	  int _buttonwidth =  _width - 16;
+	  int _buttonwidth = _width - 16;
+	  int _textboxheight = _height - 16;
 	  int _border = 8;
 	  int _textColor;
 	  int _buttonColor;
@@ -57,6 +58,7 @@ class Menu {
 	  twoButtons(char* b1, char*b2, int sel);
 	  threeButtons(char* b1, char*b2, char* b3, int sel);
 	  fourButtons(char* b1, char*b2, char* b3, char* b4, int sel);
+	  textBox(char* text);
 };
 
 #endif
