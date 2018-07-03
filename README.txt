@@ -1,8 +1,6 @@
 This is a library to easy generate menu buttons. 
 This library works only with Adafruit_TFTLCD library: 
 	---->https://github.com/adafruit/TFTLCD-Library
-	
-Written by MrOlga22. 
  
 Commands: 
 Menu m; //initialize class instance m 
@@ -24,3 +22,5 @@ m.oneButton("Btn Text", Selected Btn (0 for none, 1 for first Btn);
 m.twoButtons("Btn1 Text", "Btn2 Text", Selected Btn); 
 m.threeButtons("Btn1 Text", "Btn2 Text" , "Btn3 Text", Selected Btn); 
 m.fourButtons("Btn1 Text", "Btn2 Text" , "Btn3 Text", "Btn4 Text", Selected Btn); 
+
+m.textBox("Text");
